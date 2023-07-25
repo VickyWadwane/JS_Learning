@@ -14,3 +14,7 @@ console.log(typeof isMarried);
 var city = "Pune";
 console.log(city);
 console.log(typeof city);
+
+var salary = null;
+console.log(salary);
+console.log(typeof salary);
