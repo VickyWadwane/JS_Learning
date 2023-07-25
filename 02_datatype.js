@@ -15,6 +15,10 @@ var city = "Pune";
 console.log(city);
 console.log(typeof city);
 
+console.log("============================================");
+
 var salary = null;
-console.log(salary);
 console.log(typeof salary);
+salary = 40000.50;
+var typeOfSalary = typeof salary;
+console.log("Salary amount : ",salary,"|","Type of Salary :", typeOfSalary);
