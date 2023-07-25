@@ -14,3 +14,4 @@ console.log(typeof phoneNumber);
 
 console.log("---------------Statement 2-------------");
 
+
