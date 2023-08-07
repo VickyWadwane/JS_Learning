@@ -11,6 +11,7 @@ function stringHandsOn(){
     console.log(`--------------------------Step 3------------------------`);
     var str = "     Hey you are doing good, keep it up       ";
     var result = str.trim();
+    console.log(`String result after trim : ${result}`);
     console.log(`The changed length of string after Trim is : ${result.length}`);
 
     console.log(`--------------------------Step 4------------------------`);
