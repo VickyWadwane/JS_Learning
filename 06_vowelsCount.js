@@ -3,10 +3,29 @@
 
 
 function vowelCount(str){
-   let char = str.charAt(0);
-   console.log(char);
-   if(char==(a,e,i,o,u)|| char == (A,E,I,O,U)){
-        console.log(`It is a vowel`);
+   let count = 0;
+for (let index = 0; index < str.length; index++) {
+   let char = str.charAt(index);
+   
+   if(char=='a' || char=='e' || char=='i' || char=='o'|| char=='u' || 
+      char=='A' || char=='E' || char=='I' || char=='O'|| char=='U'){
+      console.log(char);
+      count = count + 1; 
+      }
    }
+   console.log(`Total Number of Vowels is: ${count}`);
 }
 vowelCount("I am very good UI Developer");
+
+//WAP to get the sum of numbers from 0 to 20 
+let sum = function(){
+   let totalSum = 0;
+   for (let index = 1; index <= 20; index++) {
+        totalSum = totalSum + index;
+   }
+   console.log(`Sum of first 20 numbers is: ${totalSum}`);
+}
+
+sum();
+
+
