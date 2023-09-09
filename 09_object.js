@@ -1,3 +1,9 @@
+
+
+
+
+
+
 let personGK = {
     empId: 2233,
     state: "MH",
@@ -8,8 +14,8 @@ let personGK = {
         console.log(`Inside show function`);
     }
 }
-console.log(personGK);
 
+console.log(personGK);
 console.log(typeof personGK);
 
 console.log(`Emp Id: ${personGK.empId}`); // Dot Notation
@@ -25,7 +31,6 @@ delete personGK.designation;
 console.log(personGK);
 
 personGK.adharNumber = 123456781234;
-
 personGK.show();
 
 let array = [];
@@ -53,5 +58,29 @@ let city = bank.address.city;
 bank.address.country = "Maharashtra";
 bank.empNames.pop();
 bank.empNames.unshift("Mark");
-
 bank.address.getAddress();
+bank.empNames.push("Anil");
+
+let student = {
+    rollNumber: 2233,
+    state: "MH",
+    city: "Pune",
+    college: "COEP Pune"
+}
+
+let keysStudent = Object.keys(student);
+console.log(keysStudent);
+let valuesStudent = Object.values(student);
+console.log(valuesStudent);
+
+ 
+console.log(`----------Traversing an object ------------ `);
+for (const key in student) {
+    if (Object.hasOwnProperty.call(student, key)) {
+        const element = student[key];
+        console.log(`Key: ${key}, value : ${element}`); 
+    }
+}
+
+
+let isAvailable= "college" in student;

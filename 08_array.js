@@ -98,3 +98,35 @@ array.splice(4,2,33,55,66,77)
 
 console.log(array);
 
+console.log(`---------------------------Concat Array------------------------------`);
+let array1 = [3,4,5,6];
+let array2 = [6,7,8,9];
+let array3 = array1.concat(array2);
+console.log(array3);
+
+console.log(`---------------------------Join Array------------------------------`);
+
+
+let result = array1.join("|");
+console.log(result);
+
+console.log(`---------------------------For Of loop ------------------------------`);
+
+
+for (const element of array3) {
+    console.log(element);
+}
+
+console.log(`---------------------------Array resize ------------------------------`);
+
+let array4 = [4,5,,6,7,8,9];
+array4.length = 3;
+console.log(array4);
+
+console.log(`---------------------------Spread Operator ------------------------------`);
+
+let array5 = [4,5,6,7,8,9];
+console.log(array5);
+console.log(...array5);
+
+
